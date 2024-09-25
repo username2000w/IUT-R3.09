@@ -1,4 +1,4 @@
-def chiffreVigenere(texte_clair : str, cle: str):
+def chiffreVigenere(texte_clair : str, cle: str) -> str:
     """Chiffre un texte en utilisant le chiffre de Vigenère
 
     Args:
