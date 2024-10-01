@@ -4,7 +4,6 @@ def kasiski(texte : str, longueur: int) -> int:
     sous_chaines : dict[str, list[int]]
     sous_chaine : str
 
-    sous_chaines_pairs : dict[str, list[int]]
     positions : list[int]
 
     distances : list[int]
@@ -19,18 +18,13 @@ def kasiski(texte : str, longueur: int) -> int:
         else:
             sous_chaines[sous_chaine] = [i]
 
-    
-    sous_chaines_pairs = {}
+
+    distances = []
     for sous_chaine in sous_chaines:
         positions = sous_chaines[sous_chaine]
         if len(positions) > 1:
-            sous_chaines_pairs[sous_chaine] = positions
-
-
-    distances = []
-    for sous_chaine in sous_chaines_pairs:
-        positions = sous_chaines_pairs[sous_chaine]
-        distances.append(abs(positions[0] - positions[1]))
+            positions = sous_chaines[sous_chaine]
+            distances.append(abs(positions[0] - positions[1]))
 
         
     distances = list(dict.fromkeys(distances))
