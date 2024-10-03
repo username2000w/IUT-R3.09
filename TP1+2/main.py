@@ -11,7 +11,7 @@ if __name__ == "__main__":
     print(dechiffreVigenere(texte_chiffre, cle))
 
     texte_clair = "Je suis un chat rouge"
-    cle = "FRAISE"
+    cle = "FRA!SE"
 
     texte_chiffre = chiffreVigenere(texte_clair, cle)
     print(texte_chiffre)

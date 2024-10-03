@@ -9,8 +9,8 @@
 
 ### Test 2 :
 
-- Input : texte: `Je suis un chat rouge`, clé: `FRAISE`
-- Output : `p8A=I/:R78S)/46IF5<:'`
+- Input : texte: `Je suis un chat rouge`, clé: `FRA!SE`
+- Output : `p8AtI/:R7oS)/46!F5<:'`
 
 ### Test 3 :
 
@@ -26,7 +26,7 @@
 
 ### Test 2 :
 
-- Input : texte: `p8A=I/:R78S)/46IF5<:'`, clé: `FRAISE`
+- Input : texte: `p8AtI/:R7oS)/46!F5<:'`, clé: `FRA!SE`
 - Output : `Je suis un chat rouge`
 
 ### Test 3 :
@@ -39,4 +39,4 @@
 ### Test :
 
 - Input : fichier: `kasiski.txt`
-- Output : `La taille de la clé est de 7`
+- Output : `7`
