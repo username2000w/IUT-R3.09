@@ -21,6 +21,9 @@ def chiffreVigenere(texte_clair : str, cle: str) -> str:
 
     texte_chiffre = ""
 
+    if len(cle) == 0:
+        return "/!\\ La clé ne peut pas être vide /!\\"
+
     for i in range(0, len(texte_clair)):
         char = texte_clair[i]
         charCle = cle[i % len(cle)]
@@ -30,4 +33,4 @@ def chiffreVigenere(texte_clair : str, cle: str) -> str:
     return texte_chiffre
 
 if __name__ == "__main__":
-    print(chiffreVigenere("Bonjour", "CLE"))
+    print(chiffreVigenere("BONJOUR", "CLE"))
