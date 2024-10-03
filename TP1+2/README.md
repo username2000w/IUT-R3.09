@@ -39,4 +39,4 @@
 ### Test :
 
 - Input : fichier: `kasiski.txt`, (chiffré avec la clé "PARADIGME")
-- Output : `7`
+- Output : `9`
