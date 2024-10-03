@@ -1,4 +1,5 @@
 from math import gcd
+import os
 
 def kasiski(nom_fichier : str) -> int:
     texte : str
@@ -13,7 +14,7 @@ def kasiski(nom_fichier : str) -> int:
     longueur_sous_chaine_debut = 3
     liste_pgcd = []
 
-    fichier = open("c:/Users/maxim/Documents/IUT-R3.09/TP1+2/exercice3/" + nom_fichier, "r")
+    fichier = open(os.path.join(os.path.dirname(__file__), nom_fichier), "r")
     texte = fichier.read()
 
     while True:
