@@ -21,6 +21,9 @@ def dechiffreVigenere(texte_chiffre : str, cle : str) -> str:
 
     texte_clair = ""
 
+    if len(cle) == 0:
+        return "/!\\ La clé ne peut pas être vide /!\\"
+
     for i in range(0, len(texte_chiffre)):
         char = texte_chiffre[i]
         charCle = cle[i % len(cle)]
