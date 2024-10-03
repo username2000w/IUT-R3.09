@@ -38,5 +38,5 @@
 
 ### Test :
 
-- Input : fichier: `kasiski.txt`
+- Input : fichier: `kasiski.txt`, (chiffré avec la clé "PARADIGME")
 - Output : `7`
