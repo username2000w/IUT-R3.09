@@ -28,7 +28,7 @@ def dechiffreVigenere(texte_chiffre : str, cle : str) -> str:
         char = texte_chiffre[i]
         charCle = cle[i % len(cle)]
 
-        texte_clair += chr((ord(char) - ord(charCle) + intervalle) % intervalle + min_ascii)
+        texte_clair += chr((ord(char) - ord(charCle)) % intervalle + min_ascii)
 
     return texte_clair
 

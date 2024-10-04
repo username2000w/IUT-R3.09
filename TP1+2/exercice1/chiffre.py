@@ -33,4 +33,4 @@ def chiffreVigenere(texte_clair : str, cle: str) -> str:
     return texte_chiffre
 
 if __name__ == "__main__":
-    print(chiffreVigenere("BONJOUR", "CLE"))
+    print(chiffreVigenere("Bonjour", "CLE"))
