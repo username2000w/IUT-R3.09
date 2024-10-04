@@ -2,6 +2,14 @@ from math import gcd
 import os
 
 def kasiski(nom_fichier : str) -> int:
+    """Trouve la taille de la clé à l'aide de l'attaque de Kasiski
+
+    Args:
+        nom_fichier (str): sous format .txt
+
+    Returns:
+        int: la taille de la clé
+    """
     texte : str
     sous_chaines : dict[str, list[int]]
     sous_chaine : str
