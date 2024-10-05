@@ -15,7 +15,7 @@
 ### Test 3 :
 
 - Input : texte: `La clé n'existe pas`, clé: ``
-- Output : `/!\ La clé ne peut pas être vide /!\`
+- Output : `La clé n'existe pas`
 
 ## Exercice 2 : Déchiffrement du chiffre de Vigenère
 
@@ -32,7 +32,7 @@
 ### Test 3 :
 
 - Input : texte: `p8A=I/:R78S)/46IF5<:'`, clé: ``
-- Output : `/!\ La clé ne peut pas être vide /!\`
+- Output : `La clé n'existe pas`
 
 ## Exercice 3 : L'attaque de Kasiski
 
