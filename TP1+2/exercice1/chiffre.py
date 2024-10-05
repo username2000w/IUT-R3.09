@@ -22,7 +22,7 @@ def chiffreVigenere(texte_clair : str, cle: str) -> str:
     texte_chiffre = ""
 
     if len(cle) == 0:
-        return "/!\\ La clé ne peut pas être vide /!\\"
+        return texte_clair
 
     for i in range(0, len(texte_clair)):
         char = texte_clair[i]
