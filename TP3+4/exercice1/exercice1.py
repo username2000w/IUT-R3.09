@@ -22,4 +22,4 @@ def password_generate(master_password : str, tag : str) -> str:
 
 
 if __name__ == "__main__":
-    print(password_generate("lemotdepasse", "Unilim"))
+    print(password_generate("MotDePasse", "Unilim"))
