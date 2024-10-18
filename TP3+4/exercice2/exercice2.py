@@ -1,18 +1,18 @@
 from hashlib import sha512
 
 def password_generate(master_password : str, tag : str, size : int) -> str:
-    sha256_password: str
+    sha512_password: str
     res : str
     legal_character : int
     cutting_size : int
 
     res = ""
     legal_character = 0
-    sha256_password =  sha512(master_password.encode() + tag.encode()).hexdigest()
-    cutting_size = len(sha256_password)//size
+    sha512_password =  sha512(master_password.encode() + tag.encode()).hexdigest()
+    cutting_size = len(sha512_password)//size
 
     for i in range(0, size):
-        char = sha256_password[cutting_size*i:cutting_size*i+cutting_size]
+        char = sha512_password[cutting_size*i:cutting_size*i+cutting_size]
         for character in char:
             legal_character += ord(character)
         legal_character = (legal_character - 33) % 95 + 33
@@ -23,4 +23,4 @@ def password_generate(master_password : str, tag : str, size : int) -> str:
 
 
 if __name__ == "__main__":
-    print(password_generate("MotDePasse", "Unilim", 10))
+    print(password_generate("MotDePasse", "Unilim", 8))
