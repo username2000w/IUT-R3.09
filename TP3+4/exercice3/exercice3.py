@@ -11,13 +11,24 @@ def password_generate(tag : str, size : int) -> str:
     legal_character = 0
 
     file = os.path.join(os.path.dirname(__file__), "mpwd.txt")
+
+    print("Voulez vous changer le mot de passe maitre ? (o/n)")
+    if input() == "o":
+        with open(file, "w") as f:
+            # vide le fichier
+            f.write("")
+            print("Choississez un mot de passe maitre : ")
+            f.write(input())
+            f.close()
+
     try:
         with open(file, "r") as f:
             master_password = f.read()
             f.close()
     except FileNotFoundError:
         with open(file, "w") as f:
-            f.write("MotDePasse")
+            print("Choississez un mot de passe maitre : ")
+            f.write(input())
             f.close()
         with open(file, "r") as f:
             master_password = f.read()
